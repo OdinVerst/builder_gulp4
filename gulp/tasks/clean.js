@@ -1,7 +1,5 @@
 'use strict';
 
-$.gulp.task('del', function () {
-    return $.del([
-        'build'
-    ]);
+$.gulp.task('del', function(cb) {
+    return $.del($.config.root, cb);
 });
